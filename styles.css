@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: #24272E;
+    color: white;
+}
+
+header {
+    background: white;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #24272E;
+    font-size: 40px;
+}
+
+.score-board {
+    margin: 20px auto;
+    padding: 15px 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 15%;
+    font-size: 40px;
+    position: relative;
+}
+
+.badge {
+    background: #E2584D;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+}
+
+img {
+    width: 65%;
+}
+
+.result {
+    visibility: hidden;
+    font-size: 40px;
+}
+
+.choices {
+    margin: 25px 0;
+}
+
+.choice {
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 10px 0px;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background-color: #596071;
+}
+
+#action-message {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.choice-win {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.choice-lose {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.choice-draw {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+.result-visible {
+    visibility: visible;
+}
+
+.result-win {
+    color: #4dcc7d;
+}
+
+.result-lose {
+    color: #fc121b;
+}
+
+.result-draw {
+    color: #464647;
+}
